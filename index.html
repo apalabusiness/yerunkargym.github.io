@@ -357,7 +357,7 @@
 			<form name="contact-form" onsubmit="sendwap()">
 			<input type="text" placeholder="Enter Name" >
 			<input type="email" placeholder="Enter Email ID" >
-			<input type="text" placeholder="Enter Mobile No" pattern="[0-10]{10}" >
+			<input type="text" placeholder="Enter Mobile No" pattern="[0-9]{10}" >
 			<textarea id="message" placeholder="Enter Message"></textarea>
 			<button type="submit">Send Message</button>
 			</form>
@@ -469,7 +469,7 @@ function sendwap(){
 	msg= message.split(' ').join('%20')
 
 	<!-- location.href= "https://api.whatsapp.com/send?phone=9130806935&text=%20' + msg" -->
-	window.open('https://api.whatsapp.com/send?phone=9130806935&text=%20' + msg)
+	window.open('https://api.whatsapp.com/send?phone=919130806935&text=%20' + msg)
 	<!-- https://wa.me/9130806935?text=%20" + message;  -->
 	<!-- alert(message); -->
 	<!-- console.log(message); -->
